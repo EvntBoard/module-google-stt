@@ -1,0 +1,48 @@
+name: Module Google Speech to text
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Build
+        run: |
+          yarn
+          yarn build
+
+      - name: Copy metadata.json & config.json & generate REPO + VERSION
+        run: |
+          cp ./metadata.json ./dist/metadata.json
+          echo ${{ github.repository }} > ./dist/REPO.TXT
+          echo ${{ steps.get_version.outputs.version }} > ./dist/VERSION.TXT
+
+      - name: Pack
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          cd ./dist/
+          npx bestzip ../module-google-stt-${{ steps.get_version.outputs.version }}.zip .
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          draft: true
+          files: |
+            *.zip

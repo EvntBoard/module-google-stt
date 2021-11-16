@@ -1,0 +1,16 @@
+{
+  "name": "module-google-stt",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --base=/modules/module-google-stt/",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.5.1",
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "evntcom-js": "https://github.com/EvntBoard/evntcom-js.git"
+  }
+}
