@@ -3,7 +3,7 @@ import legacy from '@vitejs/plugin-legacy'
 
 export default {
   server: {
-    port: 5010
+    port: 5011
   },
   plugins: [
     legacy({

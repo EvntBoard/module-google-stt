@@ -3,11 +3,16 @@
 
 
 "@babel/standalone@^7.15.7":
-  version "7.16.3"
-  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.16.3.tgz#7a546b4c8530a77b0db68158542552a803af7e03"
-  integrity sha512-hoStDfHl2+EYUv1LNHhZTysa+lMSwIEkkT4HnDNX+F0zqvPdoE2QLF7qtkd45cgCGOwQjrvwe2mOKcX3f6Wr8A==
+  version "7.16.4"
+  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.16.4.tgz#f62a5b14fc0e881668f26739f28bcdaacedd3080"
+  integrity sha512-FDRLwjeQfPm5jaHNuB+vwNyGCp24Ah3kEsbLzKmh0eSru+QCr4DmjgbRPoz71AwXLVtXU+l/i7MlVlIj5XO7Gw==
 
-"@vitejs/plugin-legacy@^1.5.1":
+"@types/lodash@^4.14.177":
+  version "4.14.177"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.177.tgz#f70c0d19c30fab101cad46b52be60363c43c4578"
+  integrity sha512-0fDwydE2clKe9MNfvXHBHF9WEahRuj+msTuQqOmAApNORFvhMYZKNGGJdCzuhheVjMps/ti0Ak/iJPACMaevvw==
+
+"@vitejs/plugin-legacy@^1.6.2":
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-legacy/-/plugin-legacy-1.6.2.tgz#638bfe74715bdba33a68b3de555f615e1b246cdb"
   integrity sha512-p5Bv/827WUpVN2m95ZYXzmjE3AblFE4CHasVoZ7dIwOPlyNcpg70SehEi5AWqyC0E7C1rHD8Nju9rWoV9uBLiw==
@@ -161,6 +166,11 @@ is-core-module@^2.2.0:
   dependencies:
     has "^1.0.3"
 
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
@@ -227,12 +237,17 @@ systemjs@^6.10.3:
   resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.11.0.tgz#8df8e74fc05822e6c40170aa409b9ca64833315f"
   integrity sha512-7YPIY44j+BoY+E6cGBSw0oCU8SNTTIHKZgftcBdwWkDzs/M86Fdlr21FrzAyph7Zo8r3CFGscyFe4rrBtixrBg==
 
+typescript@^4.3.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
+
 uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
-vite@^2.4.4:
+vite@^2.6.4:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
   integrity sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==
