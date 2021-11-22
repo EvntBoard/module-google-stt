@@ -1,1 +1,0 @@
-https://developer.mozilla.org/fr/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API
