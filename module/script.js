@@ -1,4 +1,4 @@
-import { EvntComWebSocket } from 'evntcom-js/dist/web';
+import { EvntCom } from 'evntcom-js';
 import deburr from 'lodash/deburr';
 import toLower from 'lodash/toLower';
 
@@ -12,7 +12,7 @@ let magic_word = [];
 let lang = 'en-EN'
 
 window.addEventListener('load', function () {
-  let websocket = new EvntComWebSocket({
+  let websocket = new EvntCom({
     host: isDev ? 'localhost' : window.location.hostname,
     port: isDev ? 5000 : window.location.port,
     events: ['module-google-stt-init']
